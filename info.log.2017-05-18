@@ -1,0 +1,90 @@
+2017-05-18 15:55:27,050 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3602ffa4]
+2017-05-18 15:55:27,060 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 15:55:27,091 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:55:27,177 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3602ffa4]
+2017-05-18 15:55:27,178 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 15:55:27,178 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 15:55:31,104 [http-nio-8080-exec-9] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@29c8064a]
+2017-05-18 15:55:31,107 [http-nio-8080-exec-9] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 15:55:31,108 [http-nio-8080-exec-9] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 10(Integer), 10(Integer)
+2017-05-18 15:55:31,111 [http-nio-8080-exec-9] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@29c8064a]
+2017-05-18 15:55:31,112 [http-nio-8080-exec-9] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 15:55:31,112 [http-nio-8080-exec-9] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 15:55:33,221 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1952bfe5]
+2017-05-18 15:55:33,222 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 15:55:33,223 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:55:33,228 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1952bfe5]
+2017-05-18 15:55:33,229 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 15:55:33,230 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 15:55:44,666 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7a207ddd]
+2017-05-18 15:55:44,666 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-05-18 15:55:44,667 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:55:44,686 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7a207ddd]
+2017-05-18 15:55:44,686 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-05-18 15:55:44,687 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-05-18 15:55:47,942 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2ddd40a4]
+2017-05-18 15:55:47,942 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==>  Preparing: select * from m_user limit ?, ? 
+2017-05-18 15:55:47,943 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:55:47,950 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2ddd40a4]
+2017-05-18 15:55:47,951 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==>  Preparing: select count(1) from m_user 
+2017-05-18 15:55:47,952 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==> Parameters: 
+2017-05-18 15:55:51,807 [http-nio-8080-exec-5] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7d77cc98]
+2017-05-18 15:55:51,811 [http-nio-8080-exec-5] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==>  Preparing: select * from m_user limit ?, ? 
+2017-05-18 15:55:51,812 [http-nio-8080-exec-5] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:55:51,815 [http-nio-8080-exec-5] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7d77cc98]
+2017-05-18 15:55:51,816 [http-nio-8080-exec-5] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==>  Preparing: select count(1) from m_user 
+2017-05-18 15:55:51,817 [http-nio-8080-exec-5] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==> Parameters: 
+2017-05-18 15:55:56,984 [http-nio-8080-exec-8] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@267e71ba]
+2017-05-18 15:55:56,985 [http-nio-8080-exec-8] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==>  Preparing: select * from m_user limit ?, ? 
+2017-05-18 15:55:56,985 [http-nio-8080-exec-8] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:55:56,988 [http-nio-8080-exec-8] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@267e71ba]
+2017-05-18 15:55:56,988 [http-nio-8080-exec-8] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==>  Preparing: select count(1) from m_user 
+2017-05-18 15:55:56,989 [http-nio-8080-exec-8] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==> Parameters: 
+2017-05-18 15:56:38,105 [http-nio-8080-exec-7] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17aa0c77]
+2017-05-18 15:56:38,105 [http-nio-8080-exec-7] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==>  Preparing: select * from m_user limit ?, ? 
+2017-05-18 15:56:38,107 [http-nio-8080-exec-7] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:56:38,109 [http-nio-8080-exec-7] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17aa0c77]
+2017-05-18 15:56:38,110 [http-nio-8080-exec-7] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==>  Preparing: select count(1) from m_user 
+2017-05-18 15:56:38,112 [http-nio-8080-exec-7] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==> Parameters: 
+2017-05-18 15:56:39,670 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@37d78eae]
+2017-05-18 15:56:39,670 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 15:56:39,671 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:56:39,674 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@37d78eae]
+2017-05-18 15:56:39,674 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 15:56:39,674 [http-nio-8080-exec-2] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 15:58:43,342 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3ecbc929]
+2017-05-18 15:58:43,342 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-05-18 15:58:43,343 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 15:58:43,349 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3ecbc929]
+2017-05-18 15:58:43,350 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-05-18 15:58:43,350 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-05-18 20:14:41,744 [http-nio-8080-exec-7] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b7863b1]
+2017-05-18 20:14:41,761 [http-nio-8080-exec-7] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 20:14:41,787 [http-nio-8080-exec-7] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 20:14:41,848 [http-nio-8080-exec-7] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7b7863b1]
+2017-05-18 20:14:41,848 [http-nio-8080-exec-7] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 20:14:41,849 [http-nio-8080-exec-7] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 20:14:44,739 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@77b32a1c]
+2017-05-18 20:14:44,740 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 20:14:44,741 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 10(Integer), 10(Integer)
+2017-05-18 20:14:44,743 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@77b32a1c]
+2017-05-18 20:14:44,743 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 20:14:44,743 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 20:14:46,168 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@40a3723]
+2017-05-18 20:14:46,169 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-05-18 20:14:46,169 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 20:14:46,174 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@40a3723]
+2017-05-18 20:14:46,175 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-05-18 20:14:46,176 [http-nio-8080-exec-1] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
+2017-05-18 20:56:30,640 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9d87e31]
+2017-05-18 20:56:30,640 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-05-18 20:56:30,640 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-05-18 20:56:30,664 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9d87e31]
+2017-05-18 20:56:30,664 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-05-18 20:56:30,665 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-05-18 21:19:32,872 [ContainerBackgroundProcessor[StandardEngine[Catalina]]]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-05-18 21:19:41,254 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-05-18 22:05:24,636 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-05-18 22:10:14,368 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-05-18 22:12:53,337 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-05-18 22:36:54,414 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession

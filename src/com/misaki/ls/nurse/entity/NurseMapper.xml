@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.misaki.ls.nurse.dao.NurseDao" >
+	<resultMap id="nurseResultMap" type="Nurse" >
+	    <id column="nurse_id" property="nurseId" />
+	    <result column="nurse_name" property="nurseName" />
+	    <result column="nurse_sex" property="nurseSex" />
+	    <result column="nurse_headImg" property="nurseHeadImg" />
+	    <result column="nurse_salary" property="nurseSalary" />
+	    <result column="nurse_mobile" property="nurseMobile" />
+	    <result column="nurse_score" property="nurseScore" />
+	    <result column="nurse_education" property="nurseEducation" />
+	    <result column="nurse_birthday" property="nurseBirthday" />
+	    <result column="nurse_experience" property="nurseExperience" />
+	    <result column="nurse_area" property="nurseArea" />
+	    <result column="last_modified" property="lastModified" />
+	</resultMap>
+
+	<insert id="insert" parameterType="Nurse">
+		insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) 
+			values(#{nurseId}, #{nurseName}, #{nurseSex}, #{nurseHeadImg}, #{nurseSalary}, #{nurseMobile}, #{nurseScore}, #{nurseEducation}, #{nurseBirthday}, #{nurseExperience}, #{nurseArea}, #{lastModified});
+	</insert>
+	
+	<update id="updateByPk" parameterType="Nurse">
+		update m_nurse set
+			nurse_name = #{nurseName}, nurse_sex = #{nurseSex}, nurse_headImg = #{nurseHeadImg}, nurse_salary = #{nurseSalary}, nurse_mobile = #{nurseMobile}, nurse_score = #{nurseScore}, 
+			nurse_education = #{nurseEducation}, nurse_birthday = #{nurseBirthday}, nurse_experience = #{nurseExperience}, nurse_area = #{nurseArea}, last_modified = #{lastModified}
+		where 
+			nurse_id = #{nurseId} 
+	</update>
+	
+	<delete id="deleteByPks">
+		delete from m_nurse where nurse_id in 
+		<foreach collection="array" open="(" separator="," close=")" item="pk">
+			#{pk}
+		</foreach>
+	</delete>
+	
+	<select id="selectPageList" parameterType="Page" resultMap="nurseResultMap">
+		select * from m_nurse limit #{start}, #{pageSize}
+	</select>
+	
+	<select id="selectCount" parameterType="Page" resultType="int">
+		select count(1) from m_nurse
+	</select>
+</mapper>

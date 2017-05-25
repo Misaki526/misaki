@@ -1,0 +1,278 @@
+2017-04-15 17:23:22,136 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:35:05,775 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:38:46,732 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:40:12,453 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:44:59,479 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:51:38,229 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:52:39,052 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@27667a5a]
+2017-04-15 17:52:39,068 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 17:52:39,084 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 17:52:39,180 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@27667a5a]
+2017-04-15 17:52:39,180 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 17:52:39,180 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 17:53:12,990 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@b0d1b52]
+2017-04-15 17:53:12,991 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==>  Preparing: insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
+2017-04-15 17:53:12,992 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==> Parameters: nur16e6a0ba962d4854aecb282e9a2f3d5c(String), aa(String), 男(String), null, 22322.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 17:53:12.987(Timestamp)
+2017-04-15 17:53:13,011 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@46eb1349]
+2017-04-15 17:53:13,013 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 17:53:13,015 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 17:53:13,021 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@46eb1349]
+2017-04-15 17:53:13,022 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 17:53:13,022 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 17:54:06,383 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@145ad28b]
+2017-04-15 17:54:06,384 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ==>  Preparing: delete from m_nurse where nurse_id in ( ? ) 
+2017-04-15 17:54:06,384 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ==> Parameters: nur16e6a0ba962d4854aecb282e9a2f3d5c(String)
+2017-04-15 17:54:08,738 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d836e01]
+2017-04-15 17:54:08,739 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 17:54:08,739 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 17:54:08,751 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d836e01]
+2017-04-15 17:54:08,751 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 17:54:08,752 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 17:58:37,620 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 17:59:57,020 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 18:01:24,887 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6bafa8b0]
+2017-04-15 18:01:24,887 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:01:24,920 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:01:24,951 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6bafa8b0]
+2017-04-15 18:01:24,951 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:01:24,951 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:01:41,286 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@50251cb8]
+2017-04-15 18:01:41,287 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==>  Preparing: insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
+2017-04-15 18:01:41,290 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==> Parameters: nurd616f7b6fd264e698676b934353c6ee5(String), 啊(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:01:41.284(Timestamp)
+2017-04-15 18:01:41,307 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@534bca38]
+2017-04-15 18:01:41,307 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:01:41,308 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:01:41,316 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@534bca38]
+2017-04-15 18:01:41,317 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:01:41,317 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:04:01,440 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1a347f58]
+2017-04-15 18:04:01,441 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:04:01,442 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 啊啊(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:04:01.438(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:04:01,463 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b44b775]
+2017-04-15 18:04:01,464 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:04:01,464 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:04:01,472 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1b44b775]
+2017-04-15 18:04:01,473 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:04:01,473 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:05:24,554 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@59dc68a]
+2017-04-15 18:05:24,554 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:05:24,556 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 啊啊啊(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:05:24.552(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:05:24,578 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7f9335c0]
+2017-04-15 18:05:24,579 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:05:24,581 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:05:24,586 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7f9335c0]
+2017-04-15 18:05:24,587 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:05:24,587 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:06:20,102 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5ce1cf20]
+2017-04-15 18:06:20,103 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:06:20,104 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 啊(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:06:20.101(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:06:20,122 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@49e16fa6]
+2017-04-15 18:06:20,123 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:06:20,124 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:06:20,129 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@49e16fa6]
+2017-04-15 18:06:20,129 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:06:20,130 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:11:00,394 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3ed55c08]
+2017-04-15 18:11:00,395 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:11:00,396 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 是(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:11:00.393(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:11:00,413 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5c2ed184]
+2017-04-15 18:11:00,413 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:11:00,415 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:11:00,420 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5c2ed184]
+2017-04-15 18:11:00,420 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:11:00,420 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:17:04,028 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@51d49c6b]
+2017-04-15 18:17:04,029 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:17:04,030 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: aaasd(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:17:04.028(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:17:04,048 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6bba35a4]
+2017-04-15 18:17:04,048 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:17:04,049 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:17:04,054 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@6bba35a4]
+2017-04-15 18:17:04,054 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:17:04,054 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:19:46,336 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@30c54a]
+2017-04-15 18:19:46,337 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==>  Preparing: insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
+2017-04-15 18:19:46,338 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==> Parameters: nur361c768c05444ad8bd42f3558954042f(String), 啊啊(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 18:19:46.335(Timestamp)
+2017-04-15 18:19:46,354 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4d09cdcd]
+2017-04-15 18:19:46,355 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:19:46,357 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:19:46,361 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4d09cdcd]
+2017-04-15 18:19:46,362 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:19:46,362 [http-nio-8080-exec-9] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:19:57,110 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4455fbad]
+2017-04-15 18:19:57,111 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:19:57,113 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 请求(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 18:19:57.11(Timestamp), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 18:19:57,126 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4b7ee77a]
+2017-04-15 18:19:57,126 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:19:57,127 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:19:57,132 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4b7ee77a]
+2017-04-15 18:19:57,132 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:19:57,133 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:20:50,423 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 18:21:41,228 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@123af339]
+2017-04-15 18:21:41,237 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:21:41,271 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 版本(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 18:21:41.145(Timestamp), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 18:21:41,343 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2ebffd2b]
+2017-04-15 18:21:41,345 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:21:41,347 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:21:41,384 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2ebffd2b]
+2017-04-15 18:21:41,385 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:21:41,385 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:21:45,792 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@66f666fa]
+2017-04-15 18:21:45,792 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:21:45,793 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 存储(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:21:45.79(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:21:45,813 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@30a4046a]
+2017-04-15 18:21:45,814 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:21:45,814 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:21:45,820 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@30a4046a]
+2017-04-15 18:21:45,822 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:21:45,822 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:23:02,758 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5426a1d]
+2017-04-15 18:23:02,758 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==>  Preparing: insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
+2017-04-15 18:23:02,760 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==> Parameters: nur69b6e6a46cd94073b56eb68e62f4e34f(String), 订单(String), 男(String), null, 22222.0(Double), 12342234452(String), 0.0(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 东北(String), 2017-04-15 18:23:02.757(Timestamp)
+2017-04-15 18:23:02,781 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1920daa5]
+2017-04-15 18:23:02,781 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:23:02,782 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:23:02,790 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1920daa5]
+2017-04-15 18:23:02,791 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:23:02,791 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:24:36,022 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 18:26:00,827 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5d14e768]
+2017-04-15 18:26:00,834 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:26:00,868 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 存储(String), 男(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 18:26:00.749(Timestamp), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 18:26:00,940 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@55e7005a]
+2017-04-15 18:26:00,941 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:26:00,942 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:26:00,973 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@55e7005a]
+2017-04-15 18:26:00,974 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:26:00,974 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 18:28:08,563 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 18:28:41,728 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2de12672]
+2017-04-15 18:28:41,736 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 18:28:41,772 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 恩恩(String), 男(String), null, 22222.0(Double), 12342234452(String), 0.0(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 东北(String), 2017-04-15 18:28:41.644(Timestamp), nur69b6e6a46cd94073b56eb68e62f4e34f(String)
+2017-04-15 18:28:41,846 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@f2419c2]
+2017-04-15 18:28:41,847 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 18:28:41,848 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 18:28:41,878 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@f2419c2]
+2017-04-15 18:28:41,879 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 18:28:41,879 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:15:13,923 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5c64662]
+2017-04-15 19:15:13,930 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==>  Preparing: select * from m_user limit ?, ? 
+2017-04-15 19:15:13,953 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:15:13,983 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5c64662]
+2017-04-15 19:15:13,983 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==>  Preparing: select count(1) from m_user 
+2017-04-15 19:15:13,983 [http-nio-8080-exec-3] DEBUG  com.misaki.account.user.dao.UserDao.selectCount - ==> Parameters: 
+2017-04-15 19:15:54,465 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@32e6e278]
+2017-04-15 19:15:54,466 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:15:54,468 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:15:54,484 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@32e6e278]
+2017-04-15 19:15:54,484 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:15:54,485 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:16:06,231 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@62244738]
+2017-04-15 19:16:06,232 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ==>  Preparing: delete from m_nurse where nurse_id in ( ? , ? ) 
+2017-04-15 19:16:06,232 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ==> Parameters: nur69b6e6a46cd94073b56eb68e62f4e34f(String), nurd616f7b6fd264e698676b934353c6ee5(String)
+2017-04-15 19:16:06,249 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@564c09e]
+2017-04-15 19:16:06,252 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:16:06,253 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:16:06,259 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@564c09e]
+2017-04-15 19:16:06,259 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:16:06,260 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:16:44,703 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@cc35c02]
+2017-04-15 19:16:44,703 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 19:16:44,707 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 存储(String), 女(String), null, 22222.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 19:16:44.699(Timestamp), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 19:16:44,727 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4f68aedf]
+2017-04-15 19:16:44,727 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:16:44,728 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:16:44,739 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@4f68aedf]
+2017-04-15 19:16:44,740 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:16:44,741 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:17:49,790 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7341a9c7]
+2017-04-15 19:17:49,791 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 19:17:49,793 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 存储(String), 男(String), null, 33333.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 19:17:49.789(Timestamp), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 19:17:49,812 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@619de8b3]
+2017-04-15 19:17:49,813 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:17:49,814 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:17:49,820 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@619de8b3]
+2017-04-15 19:17:49,820 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:17:49,821 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:28:32,371 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@25e8d2d5]
+2017-04-15 19:28:32,371 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:28:32,373 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:28:32,379 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@25e8d2d5]
+2017-04-15 19:28:32,380 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:28:32,380 [http-nio-8080-exec-10] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:28:39,878 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2255c10b]
+2017-04-15 19:28:39,879 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 19:28:39,881 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 订单(String), 男(String), null, 33333.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 19:28:39.877(Timestamp), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 19:28:39,904 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2695017a]
+2017-04-15 19:28:39,905 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:28:39,907 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:28:39,913 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2695017a]
+2017-04-15 19:28:39,913 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:28:39,914 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:31:28,809 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 19:31:59,812 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@184d5a87]
+2017-04-15 19:31:59,822 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:31:59,843 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:31:59,889 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@184d5a87]
+2017-04-15 19:31:59,890 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:31:59,890 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:32:33,026 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 19:33:02,867 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1cad6e91]
+2017-04-15 19:33:02,875 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:33:02,903 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:33:02,939 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1cad6e91]
+2017-04-15 19:33:02,940 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:33:02,940 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:33:11,364 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2fa9eb20]
+2017-04-15 19:33:11,365 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 19:33:11,369 [http-nio-8080-exec-6] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 方法(String), 男(String), null, 33333.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 广东(String), 2017-04-15 19:33:11.36(Timestamp), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 19:33:11,397 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@60a36310]
+2017-04-15 19:33:11,400 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:33:11,401 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:33:11,406 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@60a36310]
+2017-04-15 19:33:11,407 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:33:11,408 [http-nio-8080-exec-1] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:33:31,603 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@1d816636]
+2017-04-15 19:33:31,605 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==>  Preparing: insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
+2017-04-15 19:33:31,607 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==> Parameters: nur1804aa364dd24020906279a354bd010c(String), 谷歌(String), 男(String), null, 333333.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 东北(String), 2017-04-15 19:33:31.601(Timestamp)
+2017-04-15 19:33:31,625 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@367990bb]
+2017-04-15 19:33:31,625 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:33:31,626 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:33:31,637 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@367990bb]
+2017-04-15 19:33:31,638 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:33:31,638 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:34:36,604 [localhost-startStop-2]  WARN  org.springframework.beans.factory.support.DisposableBeanAdapter - Invocation of destroy method 'close' failed on bean with name 'sqlSessionTemplate': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2017-04-15 19:35:09,048 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@29cce23b]
+2017-04-15 19:35:09,058 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:35:09,089 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:35:09,121 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@29cce23b]
+2017-04-15 19:35:09,121 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:35:09,121 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:35:42,070 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@29855498]
+2017-04-15 19:35:42,071 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==>  Preparing: insert into m_nurse(nurse_id, nurse_name, nurse_sex, nurse_headImg, nurse_salary, nurse_mobile, nurse_score, nurse_education, nurse_birthday, nurse_experience, nurse_area, last_modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?); 
+2017-04-15 19:35:42,072 [http-nio-8080-exec-5] DEBUG  com.misaki.ls.nurse.dao.NurseDao.insert - ==> Parameters: nur1ae624f0da3d4e4e9fcb236d62166906(String), 哈哈(String), 男(String), null, 222222.0(Double), 12459282734(String), 0.0(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 山东(String), 2017-04-15 19:35:42.061(Timestamp)
+2017-04-15 19:35:42,116 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@44dd79e7]
+2017-04-15 19:35:42,116 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:35:42,117 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:35:42,125 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@44dd79e7]
+2017-04-15 19:35:42,125 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:35:42,126 [http-nio-8080-exec-2] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:35:51,065 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@201a201e]
+2017-04-15 19:35:51,066 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==>  Preparing: update m_nurse set nurse_name = ?, nurse_sex = ?, nurse_headImg = ?, nurse_salary = ?, nurse_mobile = ?, nurse_score = ?, nurse_education = ?, nurse_birthday = ?, nurse_experience = ?, nurse_area = ?, last_modified = ? where nurse_id = ? 
+2017-04-15 19:35:51,068 [http-nio-8080-exec-8] DEBUG  com.misaki.ls.nurse.dao.NurseDao.updateByPk - ==> Parameters: 谷歌2(String), 男(String), null, 333333.0(Double), 12459282734(String), 0.01(Double), 大学(String), 1980-05-05 00:00:00.0(Timestamp), 1年(String), 东北(String), 2017-04-15 19:35:51.063(Timestamp), nur1804aa364dd24020906279a354bd010c(String)
+2017-04-15 19:35:51,089 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@272c7ed6]
+2017-04-15 19:35:51,089 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:35:51,090 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:35:51,098 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@272c7ed6]
+2017-04-15 19:35:51,099 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:35:51,100 [http-nio-8080-exec-4] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 
+2017-04-15 19:37:22,033 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@16462753]
+2017-04-15 19:37:22,034 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ==>  Preparing: delete from m_nurse where nurse_id in ( ? , ? , ? ) 
+2017-04-15 19:37:22,035 [http-nio-8080-exec-3] DEBUG  com.misaki.ls.nurse.dao.NurseDao.deleteByPks - ==> Parameters: nur1804aa364dd24020906279a354bd010c(String), nur1ae624f0da3d4e4e9fcb236d62166906(String), nur361c768c05444ad8bd42f3558954042f(String)
+2017-04-15 19:37:22,049 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@26b4e328]
+2017-04-15 19:37:22,050 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==>  Preparing: select * from m_nurse limit ?, ? 
+2017-04-15 19:37:22,051 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-04-15 19:37:22,056 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@26b4e328]
+2017-04-15 19:37:22,056 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==>  Preparing: select count(1) from m_nurse 
+2017-04-15 19:37:22,057 [http-nio-8080-exec-7] DEBUG  com.misaki.ls.nurse.dao.NurseDao.selectCount - ==> Parameters: 

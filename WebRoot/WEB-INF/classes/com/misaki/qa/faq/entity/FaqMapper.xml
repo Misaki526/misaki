@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.misaki.qa.faq.dao.FaqDao">
+	<resultMap type="Faq" id="faqResultMap">
+		<id property="faqId" column="faq_id" />
+		<result property="faqTitle" column="faq_title" />
+		<result property="faqAnswer" column="faq_answer" />
+		<result property="faqType" column="faq_type" />
+		<result property="faqComment" column="faq_comment" />
+		<result property="lastModified" column="last_modified" />
+	</resultMap>
+	
+	<select id="selectByPk" parameterType="String" resultMap="faqResultMap">
+		select * from m_faq where faq_id = #{faqID}
+	</select>
+
+	<insert id="insert" parameterType="Faq">
+		insert into m_faq(faq_id, faq_title, faq_answer, faq_type, faq_comment, last_modified) 
+			values(#{faqId}, #{faqTitle}, #{faqAnswer}, #{faqType}, #{faqComment}, #{lastModified});
+	</insert>
+	
+	<update id="updateByPk" parameterType="Faq">
+		update m_faq set
+			faq_title = #{faqTitle}, faq_answer = #{faqAnswer}, 
+			faq_type = #{faqType}, faq_comment = #{faqComment}, last_modified = #{lastModified} 
+		where 
+			faq_id = #{faqId}		
+	</update>
+	
+	<delete id="deleteByPks">
+		delete from m_faq where faq_id in 
+		<foreach collection="array" open="(" separator="," close=")" item="pk">
+			#{pk}
+		</foreach>
+	</delete>
+	
+	<select id="selectPageList" parameterType="Page" resultMap="faqResultMap">
+		select * from m_faq limit #{start}, #{pageSize}
+	</select>
+	
+	<select id="selectCount" parameterType="Page" resultType="int">
+		select count(1) from m_faq
+	</select>
+	
+</mapper>
