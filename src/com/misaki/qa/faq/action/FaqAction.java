@@ -65,11 +65,11 @@ public class FaqAction {
 	
 	@RequestMapping("/findAnswerInFaq")
 	@ResponseBody
-	public Object findAnswerInFaq(String question) {
+	public Object findAnswerInFaq(String order) {
 		
 		Faq result = null;
 		try {
-			result = faqService.findAnswerInFaq(question);
+			result = faqService.findAnswerInFaq(order);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -1,0 +1,6 @@
+2017-06-07 21:14:40,725 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@473fbb93]
+2017-06-07 21:14:40,734 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==>  Preparing: select * from m_faq limit ?, ? 
+2017-06-07 21:14:40,760 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectPageList - ==> Parameters: 0(Integer), 10(Integer)
+2017-06-07 21:14:40,845 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ooo Using Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@473fbb93]
+2017-06-07 21:14:40,845 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==>  Preparing: select count(1) from m_faq 
+2017-06-07 21:14:40,846 [http-nio-8080-exec-5] DEBUG  com.misaki.qa.faq.dao.FaqDao.selectCount - ==> Parameters: 
