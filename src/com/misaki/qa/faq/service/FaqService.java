@@ -12,6 +12,8 @@ public interface FaqService extends BaseService<Faq> {
 	 */
 	public Faq findAnswerInFaq(String question) throws Exception;
 	
-	// 同步到Solr
+	/**
+	 * 同步到Solr
+	 */
 	public int synchroSolr() throws Exception;
 }

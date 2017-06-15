@@ -74,4 +74,21 @@ public class NurseAction {
 		return i;
 	}
 	
+	@RequestMapping("/findNurse")
+	@ResponseBody
+	public Object findNurse(String order) {
+		Nurse nurse = null;
+		try {
+			nurse = nurseService.findNurse(order);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		if ("Not Found".equals(nurse.getNurseName())) {
+			return "Not Found";
+		} else {
+			return nurse;
+		}
+	}
+	
 }

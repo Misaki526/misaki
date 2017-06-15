@@ -13,7 +13,7 @@ import org.junit.Test;
 @SuppressWarnings("deprecation")
 public class AllocationUtil {
 
-	private static final String URL = "http://localhost:8080/solr/collection1";
+	public static final String URL = "http://localhost:8080/solr/collection1";
 	public static final String TYPE_MUSIC = "music";
 	public static final String TYPE_FOOD = "food";
 	public static final String TYPE_NURSE = "nurse";
@@ -79,6 +79,6 @@ public class AllocationUtil {
 
 	@Test
 	public void getAnalysis() {
-		System.out.println(AllocationUtil.getType("我想听星星点灯"));
+		System.out.println(AllocationUtil.getType("我要找保姆"));
 	}
 }

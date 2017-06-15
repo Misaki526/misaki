@@ -3,21 +3,34 @@ package com.misaki.ls.nurse.entity;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
+import org.apache.solr.client.solrj.beans.Field;
 
 public class Nurse implements Serializable {
 	private static final long serialVersionUID = -6195129013403169447L;
 	
+	@Field("id")
 	private String nurseId;
+	@Field("nurse_name")
 	private String nurseName;
+	@Field("nurse_sex")
 	private String nurseSex;
+	@Field("nurse_headImg")
 	private String nurseHeadImg;
+	@Field("nurse_salary")
 	private Double nurseSalary; 
+	@Field("nurse_mobile")
 	private String nurseMobile;
+	@Field("nurse_score")
 	private Double nurseScore;
+	@Field("nurse_education")
 	private String nurseEducation;
+	@Field("nurse_birthday")
 	private Date nurseBirthday;
+	@Field("nurse_experience")
 	private String nurseExperience;
+	@Field("nurse_area")
 	private String nurseArea;
+	@Field("last_modified")
 	private Date lastModified;
 	
 	public Nurse() {

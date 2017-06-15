@@ -3,7 +3,6 @@ package com.misaki.qa.faq.entity;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
-
 import org.apache.solr.client.solrj.beans.Field;
 
 public class Faq implements Serializable {

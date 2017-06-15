@@ -8,6 +8,7 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocumentList;
 import org.springframework.stereotype.Service;
 import com.misaki.core.service.impl.BaseServiceImpl;
+import com.misaki.core.util.AllocationUtil;
 import com.misaki.qa.faq.entity.Faq;
 import com.misaki.qa.faq.service.FaqService;
 
@@ -15,13 +16,12 @@ import com.misaki.qa.faq.service.FaqService;
 @Service("faqService")
 public class FaqServiceImpl extends BaseServiceImpl<Faq> implements FaqService {
 	
-	private static final String URL = "http://localhost:8080/solr/collection1";
-	
 	@Override
 	public Faq findAnswerInFaq(String question) throws Exception {
 		@SuppressWarnings("resource")
-		HttpSolrServer solrServer = new HttpSolrServer(URL);
+		HttpSolrServer solrServer = new HttpSolrServer(AllocationUtil.URL);
 		SolrQuery solrQuery = new SolrQuery();
+		
 		solrQuery.set("q", "faq_title:" + question);
 		QueryResponse response = solrServer.query(solrQuery);
 		
@@ -33,7 +33,7 @@ public class FaqServiceImpl extends BaseServiceImpl<Faq> implements FaqService {
 			faq = solrServer.getBinder().getBean(Faq.class, solrList.get(0));
 		else {
 			faq = new Faq();
-			faq.setFaqAnswer("没找到");
+			faq.setFaqAnswer("Not Found");
 		}
 
 		return faq;
