@@ -11,11 +11,13 @@ import org.junit.Test;
 
 import com.misaki.qa.faq.entity.Faq;
 
+@SuppressWarnings("deprecation")
 public class TestFaq {
 	private static final String URL = "http://localhost:8080/solr/collection1";
 	
 	@Test
 	public void testSearchFaq() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		SolrQuery solrQuery = new SolrQuery();
 		solrQuery.set("q", "faq_title:贫血");

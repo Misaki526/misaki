@@ -12,6 +12,7 @@ import org.junit.Test;
 /**
  * 引入相关jar
  */
+@SuppressWarnings("deprecation")
 public class TestSolr1 {
 
 	private static final String URL = "http://localhost:8080/solr/collection1";
@@ -19,6 +20,7 @@ public class TestSolr1 {
 	@Test
 	public void testAdd() throws Exception {
 		// 实例化solr对象
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		// 实例化添加数据类
 		SolrInputDocument doc1 = new SolrInputDocument();
@@ -41,6 +43,7 @@ public class TestSolr1 {
 	
 	@Test
 	public void testSearch() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		// 查询类
 		SolrQuery solrQuery = new SolrQuery();
@@ -68,6 +71,7 @@ public class TestSolr1 {
 	
 	@Test
 	public void testDel() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		
 		// solrServer.deleteById("1");

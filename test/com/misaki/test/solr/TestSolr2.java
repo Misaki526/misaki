@@ -1,6 +1,7 @@
 package com.misaki.test.solr;
 
 import java.util.UUID;
+
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.apache.solr.client.solrj.response.QueryResponse;
@@ -8,12 +9,15 @@ import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.junit.Test;
 
+@SuppressWarnings("deprecation")
 public class TestSolr2 {
 	
 	private static final String URL = "http://localhost:8080/solr/collection1";
 	
+	
 	@Test
 	public void testAddUser() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		
 		String prefix = "user_";
@@ -38,6 +42,7 @@ public class TestSolr2 {
 	
 	@Test
 	public void testChange() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		SolrDocument doc = new SolrDocument();
 		
@@ -53,6 +58,7 @@ public class TestSolr2 {
 	
 	@Test
 	public void testSearchUser() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		SolrQuery solrQuery = new SolrQuery();
 		solrQuery.set("q", "user_name:张");
@@ -68,6 +74,7 @@ public class TestSolr2 {
 	
 	@Test
 	public void testDelUser() throws Exception {
+		@SuppressWarnings("resource")
 		HttpSolrServer solrServer = new HttpSolrServer(URL);
 		
 		solrServer.deleteByQuery("user_name:张");

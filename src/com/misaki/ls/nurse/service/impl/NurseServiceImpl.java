@@ -22,7 +22,7 @@ public class NurseServiceImpl extends BaseServiceImpl<Nurse> implements NurseSer
 		HttpSolrServer solrServer = new HttpSolrServer(AllocationUtil.URL);
 		SolrQuery solrQuery = new SolrQuery();
 		
-		solrQuery.set("q", "nurse_area:" + information);
+		solrQuery.set("q", "nurse_info:" + information);
 		QueryResponse response = solrServer.query(solrQuery);
 		
 		SolrDocumentList solrList = response.getResults();
