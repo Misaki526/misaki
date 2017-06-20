@@ -1,7 +1,6 @@
 package com.misaki.test.service;
 
 import org.junit.Test;
-
 import com.misaki.ls.music.service.impl.MusicServiceImpl;
 
 public class TestMusicService {
@@ -11,4 +10,5 @@ public class TestMusicService {
 		// aaqqqqasdsafsaf
 		System.out.println(new MusicServiceImpl().findMusic("黑白之间"));     
 	}
+	
 }

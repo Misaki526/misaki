@@ -15,7 +15,12 @@ public class MusicServiceImpl implements MusicService {
 		if (musicId != null)
 			musicInfo = MusicUtil.getMusicInfo("{" + musicId + "}");
 		
-		return musicInfo;
+		String musicAddr = null;
+		if (musicInfo != null) {
+			musicAddr = MusicUtil.getMusicAddr(musicInfo);
+		}
+		
+		return musicAddr;
 	}
 
 }
