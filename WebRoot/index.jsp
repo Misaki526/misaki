@@ -53,7 +53,8 @@
 		$("#btn_sbt").click(function() {
 			var order = $("#order").val();
     		$.ajax({
-    			url: "${proPath}/base/allocation.action", 
+    			// url: "${proPath}/base/allocation.action", 
+    			url: "${proPath}/qa/reasoning/findAnswer.action", 
     			type: "POST", 
     			traditional: true, 
     			data: {

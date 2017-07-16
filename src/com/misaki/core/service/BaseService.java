@@ -15,7 +15,7 @@ public interface BaseService<T> {
 	public int deleteByPk(T entity) throws Exception;
 	
 	// 根据对象主键数据批量删除
-	public int deleteByPks(String [] pks) throws Exception;
+	public int deleteByPks(String[] pks) throws Exception;
  
 	// 根据对象主键修改
 	public int updateByPk(T entity) throws Exception;
